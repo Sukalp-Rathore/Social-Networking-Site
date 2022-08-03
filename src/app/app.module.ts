@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { PostDashboardComponent } from './post-dashboard/post-dashboard.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -13,10 +14,11 @@ import { PostDashboardComponent } from './post-dashboard/post-dashboard.componen
     SigninComponent,
     SignupComponent,
     PostDashboardComponent
-  ],
+  ],  
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
