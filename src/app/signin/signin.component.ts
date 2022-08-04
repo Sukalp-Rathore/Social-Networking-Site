@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {UsersService} from '../../app/users.service'
+// import { signWithGoogle } from '../../services'
 @Component({
   selector: 'app-signin',
   templateUrl: './signin.component.html',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SigninComponent implements OnInit {
 
-  constructor() { }
+
+
+  constructor(private auth :UsersService) { }
 
   ngOnInit(): void {
+  }
+
+  signInWithGoogle(){
+    this.auth.googleSignIn();
   }
 
 }

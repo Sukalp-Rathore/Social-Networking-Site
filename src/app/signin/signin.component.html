@@ -1,1 +1,24 @@
-<p>signin works!</p>
+<div class="big">
+    <div class="header">
+        <h1>Logo</h1>
+    </div>
+    <div class="container c1">
+        <div class="row">
+            <div class="col-md-6 col1">
+                <p class="welcome">SIGN IN</p>
+            </div>
+            <div class="col-md-6 col2">
+                <label for="">Email ID</label><br>
+                <input type="email" placeholder="abc@gmail.com"><br>
+                <button>LOG IN</button>
+                <br>
+                <p>OR</p>
+                <br>
+                <button (click)="signInWithGoogle()">Log in with Google</button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<router-outlet></router-outlet>

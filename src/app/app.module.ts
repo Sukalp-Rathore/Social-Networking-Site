@@ -6,19 +6,24 @@ import { AppComponent } from './app.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { PostDashboardComponent } from './post-dashboard/post-dashboard.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { WelcomeComponent } from './welcome/welcome.component'
+import {AngularFireModule} from '@angular/fire/compat'
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
     AppComponent,
     SigninComponent,
     SignupComponent,
-    PostDashboardComponent
+    PostDashboardComponent,
+    WelcomeComponent
   ],  
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase )
   ],
   providers: [],
   bootstrap: [AppComponent]
