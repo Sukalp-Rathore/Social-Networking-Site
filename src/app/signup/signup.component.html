@@ -1,1 +1,25 @@
-<p>signup works!</p>
+<form [formGroup]="signupForm" (ngSubmit)="signUp()">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <label for="fanme" class="form-label">First Name</label><br>
+                <input formControlName="firstName" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="lanme" class="form-label">Last Name</label><br>
+                <input formControlName="lastName" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="mail" class="form-label">Email Id</label><br>
+                <input formControlName="email" type="email" class="form-control">
+
+                <button>Submit</button>
+
+            </div>
+        </div>
+    </div>
+</form>
