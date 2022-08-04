@@ -1,6 +1,6 @@
 import { HttpClient ,HttpClientModule,HttpHeaders} from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormGroup , FormBuilder } from '@angular/forms';
+import { FormGroup , FormBuilder , Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 @Component({
   selector: 'app-signup',
@@ -15,9 +15,9 @@ export class SignupComponent implements OnInit {
 
   ngOnInit(): void {
     this.signupForm  = this.formbuilder.group({
-      firstName :[''],
-      lastName :[''],
-      email :['']
+      firstName :['', Validators.required],
+      lastName :['', Validators.required],
+      email :['', Validators.required]
     })
   }
   signUp(){

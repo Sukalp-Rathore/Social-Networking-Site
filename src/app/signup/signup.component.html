@@ -4,20 +4,29 @@
             <div class="col-md-6">
                 <label for="fanme" class="form-label">First Name</label><br>
                 <input formControlName="firstName" type="text" class="form-control">
+                <span class="text-danger"
+                    *ngIf="signupForm.controls['firstName'].dirty && signupForm.hasError('required','firstName')">First
+                    Name is required</span>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <label for="lanme" class="form-label">Last Name</label><br>
                 <input formControlName="lastName" type="text" class="form-control">
+                <span class="text-danger"
+                    *ngIf="signupForm.controls['lastName'].dirty && signupForm.hasError('required','lastName')">Last
+                    Name is required</span>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <label for="mail" class="form-label">Email Id</label><br>
                 <input formControlName="email" type="email" class="form-control">
+                <span class="text-danger"
+                    *ngIf="signupForm.controls['email'].dirty && signupForm.hasError('required','email')">Email is
+                    required</span>
 
-                <button>Submit</button>
+                <button [disabled]=" ! signupForm.valid ">Submit</button>
 
             </div>
         </div>
