@@ -1,0 +1,31 @@
+.ch1{
+    display: flex;
+    justify-content: space-between;
+}
+.mat-dialog-container {
+    display: block;
+    padding: 24px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow: auto;
+    outline: 0;
+    width: 60% !important;
+    height: 100%;
+    min-height: inherit;
+    max-height: inherit;
+}
+p.card-text{
+    display: flex;
+}
+#photo-upload{
+    display: none;
+}
+textarea{
+    font-size: 1.5em;
+    padding: 1em;
+    resize: none;
+    width: 250px;
+    min-height: 200px;
+    border: none;
+    outline: none;
+}

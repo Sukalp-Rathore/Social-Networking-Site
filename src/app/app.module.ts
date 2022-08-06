@@ -10,6 +10,10 @@ import { WelcomeComponent } from './welcome/welcome.component'
 import {AngularFireModule} from '@angular/fire/compat'
 import { environment } from 'src/environments/environment';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatIconModule} from '@angular/material/icon';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +21,18 @@ import { ReactiveFormsModule } from '@angular/forms';
     SigninComponent,
     SignupComponent,
     PostDashboardComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    HomepageComponent
   ],  
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase ),
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatIconModule  
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,30 @@
+.big{
+    background-image: url('../../assets/bg.png');
+    background-repeat: no-repeat;
+    height: 50rem;
+    background-size: contain;
+}
+.logotxt{
+    text-align: center;
+    font-size: 70px;
+}
+.row.r1 {
+    margin-top: 15rem;
+}
+.col-md-6.col2 {
+    display: grid;
+    gap: 2rem;
+    width: 18%;
+    margin-left: 18%;
+}
+.btn{
+    padding: 15px;
+    border-radius: 65px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-size: 25px;
+}
+p.welcome {
+    font-size: 45px;
+    font-weight: bolder;
+    color: white;
+}

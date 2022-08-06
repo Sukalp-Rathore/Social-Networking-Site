@@ -1,0 +1,23 @@
+<form>
+    <div class="card text-center">
+        <div class="card-header ch1">
+            <div>Create a post</div>
+            <div>Exit</div>
+        </div>
+        <div class="card-body">
+            <p class="card-text"><img src="../../assets/user.png" alt="user" width="20px"><b> Amit rathore </b>
+            </p>
+        </div>
+        <div class="form-floating">
+            <textarea #commentInput formControlName="text" class="form-control" placeholder="Leave a comment here"
+                id="floatingTextarea"></textarea>
+        </div>
+        <div class="card-footer text-muted">
+            <label for="photo-upload">
+                <input formControlName="image" type="file" id="photo-upload" accept="image/*">
+                <img src="../createposts/gallery.png" alt="gallery" width="20px">
+            </label>
+            <button (click)="onPostClick(commentInput)">Post </button>
+        </div>
+    </div>
+</form>

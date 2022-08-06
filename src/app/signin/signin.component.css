@@ -1,0 +1,46 @@
+.big{
+    background-image: url('../../assets/bg.png');
+    background-repeat: no-repeat;
+    height: 50rem;
+    background-size: contain;
+}
+.logotxt{
+    text-align: center;
+    font-size: 70px;
+}
+.row.r1 {
+    margin-top: 19%;
+    padding-left: 14%;   
+}
+p.signin {
+    font-size: 65px;
+    color: white;
+}
+.form-control{
+    border-radius: 2.375rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.col-md-6.col2 {
+    display: grid;
+    gap: 10%;
+}
+button.loginbtn {
+    width: 30%;
+    padding: 2%;
+    border-radius: 40px;
+    color: white;
+    background-color: blue;
+    font-size: 22px;
+}
+.googlebtn{
+    width: 70%;
+    padding: 2%;
+    border-radius: 40px;
+    color: grey;
+    background-color: white;
+    font-size: 22px;
+}
+img {
+    width: 40PX;
+    margin-right: 6%;
+}

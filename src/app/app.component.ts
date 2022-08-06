@@ -9,8 +9,6 @@ export class AppComponent {
   title = 'angulartask';
   constructor(private user :UsersService){
 
-    this.user.getData().subscribe(data=>{
-      console.warn(data)
-    })
+    
   }
 }

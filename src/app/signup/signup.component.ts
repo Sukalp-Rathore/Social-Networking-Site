@@ -19,6 +19,8 @@ export class SignupComponent implements OnInit {
       lastName :['', Validators.required],
       email :['', Validators.required]
     })
+
+    localStorage.setItem('id','')
   }
   signUp(){
     let httpHeaders = new HttpHeaders({'app-id':'62ea20e14641344f73b0b152'});
@@ -26,7 +28,12 @@ export class SignupComponent implements OnInit {
     try{
       this.http.post<any>(url, this.signupForm.value,{headers:httpHeaders} )
       .subscribe(res=>{
-        console.log(res)
+        console.log(JSON.stringify(res))
+
+        const {id} = res;
+
+        console.log("====>",id);
+        console.log(localStorage.getItem('id'))
         alert("SignUp Successfull");
         this.signupForm.reset(); 
         this.router.navigate(['dashboard']);
