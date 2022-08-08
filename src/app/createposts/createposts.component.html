@@ -5,7 +5,8 @@
             <div>Exit</div>
         </div>
         <div class="card-body">
-            <p class="card-text"><img src="../../assets/user.png" alt="user" width="20px"><b> Amit rathore </b>
+            <p class="card-text" id="demotext"><img src="../../assets/user.png" alt="user" width="20px">{{firstName}}
+                &nbsp;{{lastName}}
             </p>
         </div>
         <div class="form-floating">
@@ -17,7 +18,8 @@
                 <input formControlName="image" type="file" id="photo-upload" accept="image/*">
                 <img src="../../assets/galleryimg.png" alt="gallery" width="20px">
             </label>
-            <button (click)="onPostClick(commentInput)">Post </button>
+            <button (click)="onPostClick()">Post </button>
         </div>
     </div>
+    <div class="hide" formControlName="owner">{{id}}</div>
 </form>
