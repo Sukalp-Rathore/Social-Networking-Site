@@ -33,7 +33,7 @@ export class SignupComponent implements OnInit {
         const {id} = res;
 
         console.log("====>",id);
-        console.log(localStorage.getItem('id'))
+        
         alert("SignUp Successfull");
         this.signupForm.reset(); 
         this.router.navigate(['dashboard']);
