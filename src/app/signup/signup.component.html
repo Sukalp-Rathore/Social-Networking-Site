@@ -1,34 +1,39 @@
-<form [formGroup]="signupForm" (ngSubmit)="signUp()">
-    <div class="container c1">
-        <div class="row">
-            <div class="col-md-6">
-                <label for="fanme" class="form-label">First Name</label><br>
-                <input formControlName="firstName" type="text" class="form-control">
-                <span class="text-danger"
-                    *ngIf="signupForm.controls['firstName'].dirty && signupForm.hasError('required','firstName')">First
-                    Name is required</span>
+<div class="big">
+    <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+        <div class="container c1">
+            <h1 class="logotxt">Logo</h1>
+            <div class="row r1">
+                <div class="col-md-6 col1">
+                    <p class="signup">SIGN UP</p>
+                </div>
+                <div class="col-md-6 col2">
+                    <div class="gitem">
+                        <label for="fanme" class="form-label">First Name</label><br>
+                        <input formControlName="firstName" type="text" class="form-control">
+                        <span class="text-danger"
+                            *ngIf="signupForm.controls['firstName'].dirty && signupForm.hasError('required','firstName')">First
+                            Name is required</span>
+                    </div>
+                    <div class="gitem">
+                        <label for="lanme" class="form-label">Last Name</label><br>
+                        <input formControlName="lastName" type="text" class="form-control">
+                        <span class="text-danger"
+                            *ngIf="signupForm.controls['lastName'].dirty && signupForm.hasError('required','lastName')">Last
+                            Name is required</span>
+                    </div>
+                    <div class="gitem">
+                        <label for="mail" class="form-label">Email Id</label><br>
+                        <input formControlName="email" type="email" class="form-control">
+                        <span class="text-danger"
+                            *ngIf="signupForm.controls['email'].dirty && signupForm.hasError('required','email')">Email
+                            is
+                            required</span>
+                    </div>
+                    <div class="gitem">
+                        <button class="submitbtn" [disabled]=" ! signupForm.valid ">Submit</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label for="lanme" class="form-label">Last Name</label><br>
-                <input formControlName="lastName" type="text" class="form-control">
-                <span class="text-danger"
-                    *ngIf="signupForm.controls['lastName'].dirty && signupForm.hasError('required','lastName')">Last
-                    Name is required</span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label for="mail" class="form-label">Email Id</label><br>
-                <input formControlName="email" type="email" class="form-control">
-                <span class="text-danger"
-                    *ngIf="signupForm.controls['email'].dirty && signupForm.hasError('required','email')">Email is
-                    required</span>
-
-                <button [disabled]=" ! signupForm.valid ">Submit</button>
-
-            </div>
-        </div>
-    </div>
-</form>
+    </form>
+</div>

@@ -1,15 +1,25 @@
-<div class="container grid">
-    <div class="gitem">
-        <h1>Logo</h1>
+<div class="container ">
+    <div class="row r1">
+        <div class="col-md-4">
+            <h1>Logo</h1>
+        </div>
+        <div class="col-md-4">
+            <input class="searchbox" type="text" placeholder="Search..."><img class="searchimg"
+                src="../../assets/search.png" alt="">
+        </div>
+        <div class="col-md-4">
+            <img src="../../assets/user.png" alt="user">
+        </div>
     </div>
-    <div class="gitem">
-        <input type="text" placeholder="Search...">
 
-        <img src="user.png" alt="user">
-        <input type="text" name="" id="startpost" placeholder="Start a Post in this Group">
-        <button (click)="onCreatePostClick()">Photo</button>
+    <div class="grid">
+        <div class="gitem">
+            <img src="../../assets/user.png" alt="">
+            <input type="text" name="" id="startpost" placeholder="Start a Post in this Group"><br>
+            <img class="galleryimg" src="../../assets/galleryimg.png" alt="">
+            <button (click)="onCreatePostClick()">Photo</button>
+        </div>
     </div>
-    <div class="gitem">
-        <img src="/src/assets/user.png" alt="user">
-    </div>
+
+
 </div>

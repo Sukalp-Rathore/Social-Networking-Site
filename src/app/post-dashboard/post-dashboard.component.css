@@ -1,4 +1,29 @@
+.r1{
+    margin-top: 2rem;
+}
+.searchbox{
+    width: 85%;
+    padding: 2%;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+    border: none;
+}
+img.searchimg {
+    margin-left: -10%;
+}
 .grid{
-    display:grid;
-    grid-template-columns: auto auto auto;
+    display: grid;
+    margin-left: 34%;
+    width: 27%;
+}
+input#startpost {
+    width: 85%;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+    border: none;
+    padding: 1%;
+}
+img.galleryimg {
+    width: 35px;
+}
+.gitem{
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
 }
