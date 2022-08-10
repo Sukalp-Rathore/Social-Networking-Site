@@ -2,7 +2,7 @@
     <div class="card text-center">
         <div class="card-header ch1">
             <div>Create a post</div>
-            <div>Exit</div>
+            <button (click)="clickExit()" type="button" class="btn-close" aria-label="Close"></button>
         </div>
         <div class="card-body">
             <p class="card-text" id="demotext"><img src="../../assets/user.png" alt="user" width="20px">{{firstName}}
@@ -20,6 +20,5 @@
             <button (click)="onPostClick()">Post </button>
         </div>
     </div>
-    <div class="hide" formControlName="owner">{{id}}</div>
     <input type="text" formControlName="tags">
 </form>

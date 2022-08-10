@@ -14,7 +14,7 @@ img.searchimg {
     display: grid;
     margin-left: 34%;
     width: 27%;
-    gap: 5%;
+    gap: 10px;
 }
 input#startpost {
     width: 85%;
@@ -49,4 +49,10 @@ img.galleryimg {
     margin-top: -19px;
     font-size: 10px;
     margin-left: 18px;
+}
+img.post-profile-pic {
+    width: 35px;
+    border-radius: 45px;
+    margin-top: 7px;
+    margin-left: 9px;
 }

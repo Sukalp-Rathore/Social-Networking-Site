@@ -4,18 +4,20 @@ import { AppComponent } from './app.component';
 import { PostDashboardComponent } from './post-dashboard/post-dashboard.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
-  {path : '', redirectTo:'welcome', pathMatch:'full'},
-  {path :'' , component : WelcomeComponent},
-  {path :'signin' , component : SigninComponent},
-  {path : 'signup', component : SignupComponent},
-  {path : 'dashboard' , component : PostDashboardComponent}
+  { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+  { path: '', component: WelcomeComponent },
+  { path: 'signin', component: SigninComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'dashboard', component: PostDashboardComponent },
+  { path: 'userdetails', component: UserDetailsComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

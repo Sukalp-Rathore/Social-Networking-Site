@@ -3,17 +3,19 @@
     justify-content: space-between;
 }
 .mat-dialog-container {
-    margin-left: 43%;
     display: block;
     padding: 24px;
     border-radius: 4px;
     box-sizing: border-box;
     overflow: auto;
     outline: 0;
-    width: 32%;
-    height: 36%;
+    width: 71%;
+    margin-left: 15%;
+    height: 100%;
     min-height: inherit;
-    max-height: revert;
+    position: absolute;
+    margin-top: -1756rem;
+    max-height: inherit;
 }
 p.card-text{
     display: flex;

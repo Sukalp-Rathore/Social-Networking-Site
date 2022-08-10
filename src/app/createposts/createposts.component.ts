@@ -37,7 +37,7 @@ export class CreatepostsComponent implements OnInit {
     );
     this.createpostForm = this.formbuilder.group({
       text: '',
-      image: 'www.images.com',
+      image: 'https://wallpaperaccess.com/full/492999.jpg',
       likes: 0,
       tags: '',
       owner: getUserData.id,
@@ -56,16 +56,22 @@ export class CreatepostsComponent implements OnInit {
     let httpHeaders = new HttpHeaders({ 'app-id': '62ea20e14641344f73b0b152' });
     let url = 'https://dummyapi.io/data/v1/post/create';
     try {
-      console.log(this.createpostForm);
+      // console.log(this.createpostForm);
       this.http
         .post<any>(url, this.createpostForm.value, { headers: httpHeaders })
         .subscribe((res) => {
           console.log(res);
           console.log('data sent successfulll ======>');
           alert('Post Done');
+          this.createpostForm.reset();
+          this.router.navigate(['dashboard']);
         });
     } catch (err: any) {
       console.log(err.message);
     }
+  }
+
+  clickExit() {
+    this.router.navigate(['dashboard']);
   }
 }

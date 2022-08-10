@@ -15,6 +15,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { HomepageComponent } from './homepage/homepage.component';
 import { CreatepostsComponent } from './createposts/createposts.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CreatepostsComponent } from './createposts/createposts.component';
     WelcomeComponent,
     HomepageComponent,
     CreatepostsComponent,
+    UserDetailsComponent,
   ],
   imports: [
     BrowserModule,
