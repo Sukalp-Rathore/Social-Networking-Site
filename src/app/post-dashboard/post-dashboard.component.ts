@@ -14,7 +14,11 @@ import {
   styleUrls: ['./post-dashboard.component.css'],
 })
 export class PostDashboardComponent implements OnInit {
-  constructor(private dialog: MatDialog, private http: HttpClient) {}
+  constructor(
+    private dialog: MatDialog,
+    private http: HttpClient,
+    private route: Router
+  ) {}
 
   public postData: any;
   public otherUserPost: any;
@@ -50,4 +54,7 @@ export class PostDashboardComponent implements OnInit {
     this.dialog.open(CreatepostsComponent);
   }
   onClickLike() {}
+  clickUserDetails() {
+    this.route.navigate(['userdetails']);
+  }
 }
